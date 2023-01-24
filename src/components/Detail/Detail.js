@@ -50,7 +50,9 @@
         <View style={styles.topViewContainer}>
           <View style={styles.topCard}>
             <View style={styles.topCardRow}>
-              <TouchableOpacity style={styles.topCardRow__item}>
+              <TouchableOpacity 
+              style={styles.headerItems_item_inactive}
+              onPress={() => navigation.navigate('Deposer')}>
                 <AntDesign name="pluscircleo" size={30} color="green" />
                 <Text style={styles.topCardRow__item_text}>Deposer</Text>
               </TouchableOpacity>
@@ -108,7 +110,9 @@
           </TouchableOpacity>
   
           <View style={styles.createAccountContainer}>
-            <TouchableOpacity style={styles.createAccountContainer_icon_text}>
+            <TouchableOpacity
+            style={styles.headerItems_item_inactive}
+             onPress={() => navigation.navigate('SignUp')}>
               <AntDesign
                 name="plus"
                 size={20}
